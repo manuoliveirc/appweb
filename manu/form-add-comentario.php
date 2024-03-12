@@ -1,7 +1,7 @@
 <?php
     require_once 'init.php';
     $PDO = db_connect();
-    $sql = "SELECT id, comentario FROM comentario ORDER BY comentario ASC";
+    $sql = "SELECT id, desctipo FROM tipos ORDER BY desctipo ASC";
     $stmt = $PDO->prepare($sql);
     $stmt->execute();
 ?>
@@ -46,7 +46,7 @@
 
                   <?php while($dados = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
 
-                        <option value=" <?php echo $dados['id'] ?> "> <?php echo $dados['descricao'] ?> </option>
+                        <option value=" <?php echo $dados['id'] ?> "> <?php echo $dados['desctipo'] ?> </option>
                       
                   <?php endwhile; ?>
 
