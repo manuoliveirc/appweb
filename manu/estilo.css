@@ -1,0 +1,23 @@
+.imgCapa{
+    width:30%;
+    height:30%;
+}
+.texto{
+    text-align: justify;
+}
+.card-footer{
+    text-align: center;
+}
+#erroDescricao{
+    display: none;
+    font-size: 0.8em;
+}
+#erroDescricao.visible{
+    display: block;
+}
+input.invalid{
+    border-color: red;
+}
+.jumbotron{
+    background-color:darksalmon
+}
